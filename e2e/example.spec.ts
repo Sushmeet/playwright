@@ -21,7 +21,7 @@ test("should navigate to the about page", async ({ page }) => {
   // Find an element with the text 'About Page' and click on it
   await page.click("text=About");
   // await page.getByText("About Page").click();
-  // The new URL should be "/about" (baseURL is used there)
+
   // await expect(page).toHaveURL("http://localhost:3000/about");
   await expect(page).toHaveURL("/about");
 
